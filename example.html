@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/reset.css">
+    <style>
+      .grid-container {
+        margin: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        line-height: 1.5;
+      }
+
+      .card-container {
+        background: #ce457e;
+        padding: 12px;
+        border-radius: 5px;
+        display: grid;
+        gap: 14px;
+        grid-row: 1 / -1;
+        /* grid-template-rows: repeat(3, 1fr); */
+        grid-template-rows: subgrid;
+      }
+
+      .card {
+        background: #e6cfd8;
+        padding: 12px 12px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="card-container">
+        <div class="card">Card One.</div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, dolorem! lorem50</div>
+        <div class="card">This is the footer</div>
+      </div>
+      <div class="card-container">
+        <div class="card">Card Two</div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe porro sequi animi suscipit voluptatum nostrum aliquam hic, laudantium eveniet perspiciatis!</div>
+        <div class="card">This is the footer. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident tenetur exercitationem adipisci distinctio, aliquid labore dolorum voluptate! Eos, corporis modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi expedita a doloremque eius iusto architecto quibusdam recusandae quis libero, incidunt aut enim rem ipsa porro sed provident, ex neque aliquam?</div>
+      </div>
+      <div class="card-container">
+        <div class="card">Card Three</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="card">This is the footer</div>
+      </div>
+    </div>
+
+  </body>
+</html>
